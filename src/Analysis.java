@@ -1,6 +1,4 @@
-/**
- * Created by Ahtisham Zubair on 4/19/2017.
- */
+
 public class Analysis {
     public void printAnalysis(Car car ,String Problem,String section,float cost)
     {
@@ -29,6 +27,7 @@ public class Analysis {
         System.out.println("Registration Number : "+car.CarRegisterationNum);
         System.out.println(Problem +" has been resolved");
         System.out.println("Cost : "+cost +"$");
+
 
         for (int i=0;i<5;i++)
         {
