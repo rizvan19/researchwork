@@ -11,7 +11,7 @@ public class ABSProblem implements CarProblemChain {
 
     @Override
     public float ProblemCost() {
-        return 7000;
+        return 4000;
     }
 
     private CarProblemChain nextInChain;
