@@ -27,7 +27,9 @@ public class ABSProblem implements CarProblemChain {
             new Analysis().printAnalysis(car,"ABSProblem","ABS",ProblemCost());
             nextInChain.SolveProblem(car,problem);
         }
-        else
-            nextInChain.SolveProblem(car,problem);
-    }
+        else {
+            nextInChain.SolveProblem(car, problem);
+
+        }
+        }
 }
