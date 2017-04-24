@@ -18,6 +18,7 @@ public class Main {
         chain2.setNextChain(chain3);
         chain3.setNextChain(chain4);
         chain4.setNextChain(chain5);
+        
         System.out.println("Enter Your car Model ?");
         Scanner sc= new Scanner(System.in);
         String ModelName=sc.nextLine();
