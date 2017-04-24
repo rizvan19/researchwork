@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Created by Ahtisham Zubair on 4/20/2017.
  */
 public class InputHandler {
-    String[] input=new String[8];
+    String[] input=new String[6];
     String[] inputCaptured=new String[5];
 int count=0;
     public List<CarProblemChain> TakeInput(String name,String RegNum)
@@ -80,7 +80,7 @@ int count=0;
         return namesOfProblem;
     }
 
-    private void Pagebreaker() {
+    public void Pagebreaker() {
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     }
 
@@ -90,15 +90,7 @@ int count=0;
     {
         probs.add(item);
     }
-    public float TotalCost()
-    {
-        float cost=0;
-        for(CarProblemChain item :probs)
-        {
-            cost+=item.ProblemCost();
-        }
-        return cost;
-    }
+
     public String ShowItem()
     {
         String msg="";
