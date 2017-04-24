@@ -21,7 +21,7 @@ public class Main {
         System.out.println("Enter Your car Model ?");
         Scanner sc= new Scanner(System.in);
         String ModelName=sc.nextLine();
-        System.out.println("Enter Your car Model ?");
+        System.out.println("Enter Your car registration ?");
         String RegNum=sc.nextLine();
         List<CarProblemChain> probs= new InputHandler().TakeInput(ModelName,RegNum);
 
@@ -31,6 +31,9 @@ public class Main {
 
         Car car= new Car(ModelName,RegNum);
         chain1.SolveProblem(car,probs);
+
+        Accounts ac= new Accounts();
+        ac.generate_bill(probs,car);
 
 
     }
